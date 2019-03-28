@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class Contact extends Model
 {
     /**
      * @var array
      */
     protected $fillable = [
-        'title',
-        'author_name',
-        'cover_image_src',
-        'content',
+        'name',
+        'email',
+        'phone',
+        'message'
     ];
 
     /**

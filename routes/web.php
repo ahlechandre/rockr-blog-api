@@ -11,6 +11,15 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix' => 'api/v1'], function ($router) {
+    // ------------------------------------------
+    // Artigos.
+    // ------------------------------------------
+    $router->get('articles', 'ArticleController@index');
+    $router->get('articles/{article}', 'ArticleController@show');
+    // ------------------------------------------
+    // Contatos.
+    // ------------------------------------------
+    $router->get('contacts', 'ContactController@index');
+    $router->post('contacts', 'ContactController@store');
 });

@@ -40,7 +40,7 @@ class ArticlesTableSeeder extends Seeder
         // Conteúdo para artigos.
         $content = file_get_contents('http://loripsum.net/api');
 
-        for ($i = 0; $i < self::ARTICLES_COUNT; $i++) {
+        for ($i = 1; $i <= self::ARTICLES_COUNT; $i++) {
             // -------------------------------------------------------
             // Gera conteúdo randomico por artigo.
             // -------------------------------------------------------
