@@ -106,8 +106,8 @@ curl localhost:8000/api/v1/articles/1
 ## Third-party libraries
 
 * `barryvdh/laravel-cors`
-  - Por quê: manipular requisições *Cross-Origin Resource Sharing* (CORS) com método HTTP `OPTIONS`.
-  - Como: adicionado globalmente para todas as rotas.
+  - **Motivação**: manipular requisições *Cross-Origin Resource Sharing* (CORS) com método HTTP `OPTIONS`.
+  - **Como**: adicionado globalmente para todas as rotas.
 
 --------
 
