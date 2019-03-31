@@ -1,10 +1,10 @@
 # Rockr Blog API
 
-Uma API REST feita (em alguns minutos) com PHP utilizando o micro-framework [Lumen](https://lumen.laravel.com) e MySQL para integrar artigos e contatos.
+Uma API REST feita (em alguns minutos) com PHP utilizando o micro-framework [Lumen](https://lumen.laravel.com) para integrar artigos e contatos.
 
 ## Instalação
 
-1. Crie um banco de dados (MySQL):
+1. Crie um banco de dados (MySQL, por exemplo):
 
 ```sql
 create database rockr_blog;
