@@ -1,6 +1,6 @@
 # Rockr Blog API
 
-Uma API REST feita (em alguns minutos utilizando) PHP com o micro-framework [Lumen](https://lumen.laravel.com) e MySQL para integrar artigos e contatos.
+Uma API REST feita (em alguns minutos) com PHP utilizando o micro-framework [Lumen](https://lumen.laravel.com) e MySQL para integrar artigos e contatos.
 
 ## Instalação
 
@@ -28,7 +28,7 @@ cd rockr-blog-api
 composer install
 ```
 
-5. Crie o arquivo de ambiente, gere uma chave randômica e copie para *clipboard*:
+5. Crie o arquivo de ambiente, gere uma chave randômica e copie-a para *clipboard*:
 
 
 ```bash
@@ -47,18 +47,11 @@ vim .env
 7. Associe manualmente a sua chave ao índice `API_KEY` e configure a conexão com o banco de dados:
 
 ```dotenv
-# ...
-
 APP_KEY=dXFpemwxQTF1Y1F4TTk4RnVKeXdwTVRidFFRMGlYQnQ=
-
-# ...
 
 DB_DATABASE=rockr_blog
 DB_USERNAME=root
 DB_PASSWORD=root
-
-# ...
-
 ```
 
 8. Rode as migrations e os seeders:
@@ -87,7 +80,7 @@ curl localhost:8000/api/v1/articles/1
 | `GET` | `/api/v1/articles` | Lista os recursos da coleção paginada de **artigos**.
 | `GET` | `/api/v1/articles/{id}` | Mostra um único recurso de **artigo**.
 | `GET` | `/api/v1/contacts` | Lista os recursos da coleção paginada de **contatos**.
-| `POST` | `/api/v1/contacts` | Armazena um novo recurso na coleção de **contatos**.
+| `POST` | `/api/v1/contacts` | Armazena um novo recurso na coleção de **contato**.
 
 #### Formato para adicionar contato
 
@@ -115,3 +108,7 @@ curl localhost:8000/api/v1/articles/1
 * `barryvdh/laravel-cors`
   - Por quê: manipular requisições *Cross-Origin Resource Sharing* (CORS) com método HTTP `OPTIONS`.
   - Como: adicionado globalmente para todas as rotas.
+
+--------
+
+*Made with love*.
