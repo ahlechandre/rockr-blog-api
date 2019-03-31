@@ -49,6 +49,7 @@ vim .env
 ```dotenv
 APP_KEY=dXFpemwxQTF1Y1F4TTk4RnVKeXdwTVRidFFRMGlYQnQ=
 
+DB_CONNECTION=mysql
 DB_DATABASE=rockr_blog
 DB_USERNAME=root
 DB_PASSWORD=root
