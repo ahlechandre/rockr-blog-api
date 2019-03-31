@@ -9,10 +9,6 @@ class ArticlesTableSeeder extends Seeder
      * Número de artigos a serem gerados automaticamentes.
      */
     const ARTICLES_COUNT = 25;
-    /**
-     * URL padrão para imagem do artigo.
-     */
-    const COVER_IMAGE_SRC = 'https://source.unsplash.com/640x640/?rock-concert';
 
     /**
      * Run the database seeds.
@@ -47,10 +43,14 @@ class ArticlesTableSeeder extends Seeder
             // $content = file_get_contents('http://loripsum.net/api');
 
             $numberSpelled = $numberFormatter->format($i);
+            // Forçando imagens randômicas no front-end.
+            $coverImageSrc = 'https://source.unsplash.com/640x6'.(
+                $i + 40
+            ).'/?rock-concert';
             $articles[] = [
                 'title' => "Title of article {$numberSpelled}",
                 'author_name' => 'Author '.ucfirst($numberSpelled),
-                'cover_image_src' => self::COVER_IMAGE_SRC,
+                'cover_image_src' => $coverImageSrc,
                 'content' => $content
             ];
         }
